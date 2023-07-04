@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+:root {
+  --font-regular: 'Poppins', sans-serif;
+  --bg-color: #DFDFDF;
+  --bg-card: #FFF;
+  --purple: hsl(259, 100%, 65%);
+  --bg-white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --sight-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--font-regular);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--off-white);
+}
+
+.main {
+  background-color: aqua;
+  padding: 40px;
+  background-color: var(--bg-card);
+  border-radius: 20px 20px 150px 20px;
+  width: 600px;
+}
+
+.inputs {
+  display: flex;
+}
+
+.inputs label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--smokey-grey);
+  font-weight: bold;
+
+}
+
+div input {
+  font-size: 32px;
+  width: 120px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  padding-left: 20px;
+  border: 1px solid var(--sight-grey);
+  cursor: pointer;
+  outline: 0;
+}
+
+div input:focus {
+  border: 1px solid var(--purple);
+}
+
+p span {
+  color: var(--purple);
+}
+
+.results {
+  font-size: 90px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 90px;
+}
+
+.icon {
+  background-color: var(--purple);
+  border-radius: 100%;
+  color: var(--bg-card);
+  padding: 30px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--sight-grey);
+  margin-top: 40px;
+
+}
+
+.icon:hover {
+  background-color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+}
+
+.inputs p {
+  color: red;
+  font-size: 13px;
+  font-style: italic;
+}
