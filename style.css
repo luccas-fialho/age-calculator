@@ -112,8 +112,27 @@ button {
   border: none;
 }
 
-.inputs p {
+.input-error-message {
+  display: block;
   color: red;
   font-size: 13px;
   font-style: italic;
+}
+
+.input-container--invalido label {
+  color: red;
+  font-style: italic;
+}
+
+.input-container--invalido input {
+  font-style: italic;
+  border: 1px solid red;
+}
+
+img {
+  background-color: var(--purple);
+  border-radius: 100%;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
 }

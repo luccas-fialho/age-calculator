@@ -16,28 +16,33 @@
 
 <body>
   <section class="main">
-    <form>
+    <form name="form">
       <div class="inputs">
-        <div>
-          <label>day</label><br>
-          <input class="day_input" type="number" placeholder="DD" required>
+        <div class="input-container">
+          <label for="day">day</label><br>
+          <input name="day" class="input" id="day_input" data-type="day" type="number" placeholder="DD" required>
+          <span class="input-error-message"></span>
         </div>
         
-        <div>
-          <label>month</label><br>
-          <input class="month_input" type="number" placeholder="MM" required>
+        <div class="input-container">
+          <label for="month">month</label><br>
+          <input name="month" class="input" id="month_input" data-type="month" type="number" placeholder="MM" required>
+          <span class="input-error-message"></span>
         </div>
 
-        <div>
-          <label>year</label><br>
-          <input class="year_input" type="number" placeholder="YYYY" required>
+        <div class="input-container">
+          <label for="year">year</label><br>
+          <input name="year" class="input" id="year_input" data-type="year" type="number" placeholder="YYYY" required>
+          <span class="input-error-message"></span>
         </div>
       </div>
 
       <div class="form">
         <div class="divider"></div>
         <div class="submit">
-          <button type="submit"><span class="material-symbols-outlined icon">arrow_downward</span></button>
+          <button for="form" type="submit">
+            <img src="./assets/icon-arrow.svg" alt="">
+          </button>
         </div>
 
       </div>
